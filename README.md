@@ -4,22 +4,22 @@ NetCat üzerinden, kullanıcı denetimini yok sayarak tam sistem yetkisiyle hede
 
 ### Programming Language
 
-Builder: Visual Basic
-Stub: AutoIT
+Builder: Visual Basic 
+Stub: AutoIT 
 Connector Script: PowerShell
 
 ### Builder
 
 ![Resim Açıklaması](http://i.hizliresim.com/pPBW3a.png)
 
-[1] Çalışacak powershell script'in bağlanacağı adres
-[2] Bağlantı Portu
-[3] Bağlantı Türü
+1. Çalışacak powershell script'in bağlanacağı adres
+2. Bağlantı Portu
+3. Bağlantı Türü
 	Reverse Connection = Tersine bağlantıdır, siz hedef makinaya değil; hedef makina size bağlanır.
 	Bind Connection = Hedef makina girilen port'u dinlemeye alır ve siz hedef makinaya bağlanırsınız.
-[4] Kullanıcı Denetiminin(UAC) bypasslanmasında kullanılacak method türü
-[5] Hedef Sistemde çalıştırılacak olan exe nin yapısı
-[6] "Keylogger" yani klavyede basılacak tuşların dinlenmesini sağlayan fonksiyonun seçimi
+4. Kullanıcı Denetiminin(UAC) bypasslanmasında kullanılacak method türü
+5. Hedef Sistemde çalıştırılacak olan exe nin yapısı
+6. "Keylogger" yani klavyede basılacak tuşların dinlenmesini sağlayan fonksiyonun seçimi
 
 ### Usage
 
@@ -43,7 +43,7 @@ Komutu kullanılır. Hedef sistemden gelen ve komut çalıştırılmaya hazır k
 
 Stub dosyasının ilk açıldığında yaptığı işlev örneği alttaki gibidir;
 
-```visualbasic
+```vbnet
 If MeAdmin? = YES Then
 	PowerShell Connect scriptini çalıştır
 Else
@@ -55,7 +55,7 @@ End IF
 
 Proje tüm haliyle açık kaynaktır. Yeniden düzenlenip derlenmesi için Stub'ın AutoIT ile compile edilmesi gerekmektedir.
 AutoIT kurulum & derleme için web sitemizden bilgi edinebilirsiniz;
-http://www.adeosecurity.com/blog/siber-guvenlik/zararli-yazilim-malware-gelistirmeye-giris
+[Zararlı Yazılım (Malware) Geliştirmeye Giriş](http://www.adeosecurity.com/blog/siber-guvenlik/zararli-yazilim-malware-gelistirmeye-giris)
 
 ### System Requirements
 * x86-32/x64 Windows 7/8/8.1/10
@@ -65,5 +65,5 @@ http://www.adeosecurity.com/blog/siber-guvenlik/zararli-yazilim-malware-gelistir
 * https://github.com/hfiref0x/UACME
 
 ### Authors
-* Eyüp ÇELİK
-* Tolga SEZER
+* [Eyüp ÇELİK](http://eyupcelik.com.tr)
+* [Tolga SEZER](http://www.tolgasezer.com.tr)
